@@ -1,0 +1,88 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #532d82; /* Darker shade of Royal Purple */
+}
+
+header, footer {
+    background-color: #663399; /* Royal Purple */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    flex: 1 0 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0.5rem;
+}
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card h2 {
+        color: #663399; /* Royal Purple */
+        margin: 1rem 0;
+    }
+
+    .card p {
+        margin: 1rem 0;
+    }
+
+    .card button {
+        background-color: #663399; /* Royal Purple */
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+
+        .card button:hover {
+            background-color: #532d82; /* Darker shade of Royal Purple */
+        }
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 calc(100% - 1rem);
+    }
+}
